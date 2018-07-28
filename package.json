@@ -1,0 +1,60 @@
+{
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  },
+  "name": "devtool",
+  "productName": "Toucan",
+  "version": "1.0.0",
+  "description": "Toucan - The Developer Assistant",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "webpack --watch",
+    "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "build-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName='Electron Tutorial App'"
+  },
+  "author": "Balazs Szalay",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.38",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.38",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.38",
+    "@babel/preset-es2015": "^7.0.0-beta.38",
+    "@babel/preset-react": "^7.0.0-beta.38",
+    "babel-loader": "^8.0.0-beta.0",
+    "compression-webpack-plugin": "^1.1.7",
+    "css-loader": "^0.28.9",
+    "electron": "^1.8.2",
+    "electron-store": "^1.3.0",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "fs": "0.0.1-security",
+    "get-folder-size": "^1.0.1",
+    "gm": "^1.23.1",
+    "image-size": "^0.6.2",
+    "ipc": "0.0.1",
+    "menubar": "^5.2.3",
+    "path": "^0.12.7",
+    "postcss-loader": "^2.0.10",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "readdir-absolute": "^1.0.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "syntax-error": "^1.4.0",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.0.5",
+    "electron-packager": "^11.0.1",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.1",
+    "webpack": "^3.11.0"
+  }
+}
