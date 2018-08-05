@@ -1,0 +1,32 @@
+html, body, *
+  box-sizing: border-box
+
+div.index
+  display: grid
+  grid-template-columns: 1fr 1fr
+  height: 100vh
+  overflow: hidden
+  grid-gap: 8px
+  background: #eee
+
+div.editor
+  width: 100%
+  heigth: 100%
+  background-color: #eee
+  overflow: auto
+  textarea
+    border: none
+    height: 100%
+    width: 100%
+    margin: 0
+    resize: none
+    display: block
+    padding: 12px
+div.inspector
+  overflow: auto
+  width: 50vw
+  height: 100vh
+  background: white
+
+div.markdown-body
+  padding: 12px 45px
